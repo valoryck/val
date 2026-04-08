@@ -4,7 +4,7 @@ Security & risk intelligence from your terminal. Val is the command-line interfa
 
 ## Install
 
-### Homebrew (macOS/Linux)
+### Homebrew (macOS)
 
 ```bash
 brew install valoryck/tap/val
@@ -17,7 +17,23 @@ scoop bucket add valoryck https://github.com/valoryck/scoop-valoryck.git
 scoop install val
 ```
 
-### Shell script
+### deb (Ubuntu/Debian)
+
+Download the `.deb` for your architecture from the [latest release](https://github.com/valoryck/val/releases/latest), then:
+
+```bash
+sudo dpkg -i val_*_linux_amd64.deb
+```
+
+### rpm (RHEL/Fedora/Amazon Linux)
+
+Download the `.rpm` from the [latest release](https://github.com/valoryck/val/releases/latest), then:
+
+```bash
+sudo rpm -i val_*_linux_amd64.rpm
+```
+
+### Install script
 
 ```bash
 # macOS/Linux
