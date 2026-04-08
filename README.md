@@ -10,10 +10,21 @@ Security & risk intelligence from your terminal. Val is the command-line interfa
 brew install valoryck/tap/val
 ```
 
+### Scoop (Windows)
+
+```powershell
+scoop bucket add valoryck https://github.com/valoryck/scoop-valoryck.git
+scoop install val
+```
+
 ### Shell script
 
 ```bash
+# macOS/Linux
 curl -fsSL https://raw.githubusercontent.com/valoryck/val/main/install.sh | sh
+
+# Windows (PowerShell)
+irm https://raw.githubusercontent.com/valoryck/val/main/install.ps1 | iex
 ```
 
 ### Manual download
@@ -62,6 +73,9 @@ eval "$(val completion zsh)"
 
 # fish
 val completion fish | source
+
+# powershell
+val completion powershell | Out-String | Invoke-Expression
 ```
 
 ## Commands
